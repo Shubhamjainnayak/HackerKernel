@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/linearLayout_post"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Posts">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/no_result_found_post"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/no_result_found"
+            android:textColor="#c2272d"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/recyclerViewposts"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
